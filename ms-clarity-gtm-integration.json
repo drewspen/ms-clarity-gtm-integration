@@ -1,0 +1,1961 @@
+{
+    "exportFormatVersion": 2,
+    "exportTime": "2026-07-16 13:54:20",
+    "containerVersion": {
+        "path": "accounts/1111111111/containers/222222222/versions/0",
+        "accountId": "1111111111",
+        "containerId": "222222222",
+        "containerVersionId": "0",
+        "container": {
+            "path": "accounts/1111111111/containers/222222222",
+            "accountId": "1111111111",
+            "containerId": "222222222",
+            "name": "scratchpad",
+            "publicId": "GTM-AAAAAAAA",
+            "usageContext": [
+                "WEB"
+            ],
+            "fingerprint": "1781972270535",
+            "tagManagerUrl": "https://tagmanager.google.com/#/container/accounts/1111111111/containers/222222222/workspaces?apiLink=container",
+            "features": {
+                "supportUserPermissions": true,
+                "supportEnvironments": true,
+                "supportWorkspaces": true,
+                "supportGtagConfigs": false,
+                "supportBuiltInVariables": true,
+                "supportClients": false,
+                "supportFolders": true,
+                "supportTags": true,
+                "supportTemplates": true,
+                "supportTriggers": true,
+                "supportVariables": true,
+                "supportVersions": true,
+                "supportZones": true,
+                "supportTransformations": false
+            },
+            "tagIds": [
+                "GTM-AAAAAAAA"
+            ]
+        },
+        "tag": [
+            {
+                "accountId": "1111111111",
+                "containerId": "222222222",
+                "tagId": "441",
+                "name": "Microsoft Clarity CookieYes Interaction",
+                "type": "cvt_WV8T5",
+                "parameter": [
+                    {
+                        "type": "LIST",
+                        "key": "customTags",
+                        "list": [
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "tagKey",
+                                        "value": "cmp_interaction"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "tagValue",
+                                        "value": "{{CookieYes Element Interaction}}"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "sendEvent",
+                        "value": "true"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventName",
+                        "value": "cmp_click"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "upgradeSession",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setTags",
+                        "value": "true"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setConsent",
+                        "value": "false"
+                    }
+                ],
+                "fingerprint": "1784209804575",
+                "parentFolderId": "440",
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NEEDED",
+                    "consentType": {
+                        "type": "LIST",
+                        "list": [
+                            {
+                                "type": "TEMPLATE",
+                                "value": "analytics_storage"
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "accountId": "1111111111",
+                "containerId": "222222222",
+                "tagId": "442",
+                "name": "CookieYes Interaction Send Event",
+                "type": "gaawe",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "sendEcommerceData",
+                        "value": "false"
+                    },
+                    {
+                        "type": "LIST",
+                        "key": "eventSettingsTable",
+                        "list": [
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "parameter",
+                                        "value": "cmp_interaction"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "parameterValue",
+                                        "value": "{{CookieYes Element Interaction}}"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventName",
+                        "value": "cmp_click"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "measurementIdOverride",
+                        "value": "{{Measurement Stream RegEx Lookup}}"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventSettingsVariable",
+                        "value": "{{Google Tag Shared Event Settings}}"
+                    }
+                ],
+                "fingerprint": "1784209804575",
+                "firingTriggerId": [
+                    "434"
+                ],
+                "teardownTag": [
+                    {
+                        "tagName": "Microsoft Clarity CookieYes Interaction",
+                        "stopTeardownOnFailure": true
+                    }
+                ],
+                "parentFolderId": "391",
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_NEEDED"
+                }
+            },
+            {
+                "accountId": "1111111111",
+                "containerId": "222222222",
+                "tagId": "448",
+                "name": "Microsoft Clarity Session Duration",
+                "type": "cvt_WV8T5",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "sendEvent",
+                        "value": "true"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventName",
+                        "value": "session_duration_{{Session Duration dataLayer}}sec"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "upgradeSession",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setTags",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setConsent",
+                        "value": "false"
+                    }
+                ],
+                "fingerprint": "1784209804576",
+                "parentFolderId": "440",
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NEEDED",
+                    "consentType": {
+                        "type": "LIST",
+                        "list": [
+                            {
+                                "type": "TEMPLATE",
+                                "value": "analytics_storage"
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "accountId": "1111111111",
+                "containerId": "222222222",
+                "tagId": "450",
+                "name": "Microsoft Clarity",
+                "type": "cvt_MQDKZ",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "sessionId",
+                        "value": "{{Browser Session ID}}"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "projectId",
+                        "value": "{{Microsoft Clarity Project ID}}"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "userId",
+                        "value": "{{Browser Client ID}}"
+                    }
+                ],
+                "fingerprint": "1784209804585",
+                "parentFolderId": "440",
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NEEDED",
+                    "consentType": {
+                        "type": "LIST",
+                        "list": [
+                            {
+                                "type": "TEMPLATE",
+                                "value": "analytics_storage"
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "accountId": "1111111111",
+                "containerId": "222222222",
+                "tagId": "451",
+                "name": "Session Duration",
+                "type": "cvt_222222222_445",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "rootDomain",
+                        "value": "{{Root Domain}}"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "cookieDuration",
+                        "value": "sessionCookie"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "persistentCookieExpires",
+                        "value": "365"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "durationCookie",
+                        "value": "{{Session Duration Cookie Name}}"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "maxSeconds",
+                        "value": "11"
+                    }
+                ],
+                "fingerprint": "1784209804586",
+                "firingTriggerId": [
+                    "2147479573"
+                ],
+                "parentFolderId": "443",
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NEEDED",
+                    "consentType": {
+                        "type": "LIST",
+                        "list": [
+                            {
+                                "type": "TEMPLATE",
+                                "value": "analytics_storage"
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "accountId": "1111111111",
+                "containerId": "222222222",
+                "tagId": "454",
+                "name": "Google Analytics Configuration",
+                "type": "googtag",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "tagId",
+                        "value": "{{Measurement Stream RegEx Lookup}}"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "configSettingsVariable",
+                        "value": "{{Google Tag Shared Configuration Settings}}"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventSettingsVariable",
+                        "value": "{{Google Tag Shared Event Settings}}"
+                    }
+                ],
+                "fingerprint": "1784209804586",
+                "firingTriggerId": [
+                    "2147479573"
+                ],
+                "teardownTag": [
+                    {
+                        "tagName": "Microsoft Clarity",
+                        "stopTeardownOnFailure": true
+                    }
+                ],
+                "parentFolderId": "5",
+                "tagFiringOption": "ONCE_PER_LOAD",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_NEEDED"
+                }
+            },
+            {
+                "accountId": "1111111111",
+                "containerId": "222222222",
+                "tagId": "455",
+                "name": "Session Duration Send Event",
+                "type": "gaawe",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "sendEcommerceData",
+                        "value": "false"
+                    },
+                    {
+                        "type": "LIST",
+                        "key": "eventSettingsTable",
+                        "list": [
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "parameter",
+                                        "value": "session_duration_{{Session Duration dataLayer}}sec_count"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "parameterValue",
+                                        "value": "1"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventName",
+                        "value": "session_duration_{{Session Duration dataLayer}}sec"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "measurementIdOverride",
+                        "value": "{{Measurement Stream RegEx Lookup}}"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventSettingsVariable",
+                        "value": "{{Google Tag Shared Event Settings}}"
+                    }
+                ],
+                "fingerprint": "1784209804586",
+                "firingTriggerId": [
+                    "453"
+                ],
+                "teardownTag": [
+                    {
+                        "tagName": "Microsoft Clarity Session Duration",
+                        "stopTeardownOnFailure": true
+                    }
+                ],
+                "parentFolderId": "443",
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_NEEDED"
+                }
+            }
+        ],
+        "trigger": [
+            {
+                "accountId": "1111111111",
+                "containerId": "222222222",
+                "triggerId": "434",
+                "name": "CookieYes Click Interaction",
+                "type": "CLICK",
+                "filter": [
+                    {
+                        "type": "MATCH_REGEX",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{CookieYes Element Interaction}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "^(undefined|null|0|true|false|NaN|)$"
+                            },
+                            {
+                                "type": "BOOLEAN",
+                                "key": "ignore_case",
+                                "value": "true"
+                            },
+                            {
+                                "type": "BOOLEAN",
+                                "key": "negate",
+                                "value": "true"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1784143530833",
+                "parentFolderId": "391"
+            },
+            {
+                "accountId": "1111111111",
+                "containerId": "222222222",
+                "triggerId": "453",
+                "name": "Session Duration Event",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "MATCH_REGEX",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": ".*"
+                            }
+                        ]
+                    }
+                ],
+                "filter": [
+                    {
+                        "type": "MATCH_REGEX",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Session Duration dataLayer}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "^(6|11)$"
+                            },
+                            {
+                                "type": "BOOLEAN",
+                                "key": "ignore_case",
+                                "value": "true"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{is Session Duration Event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "true"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1784209804586",
+                "parentFolderId": "443"
+            }
+        ],
+        "variable": [
+            {
+                "accountId": "1111111111",
+                "containerId": "222222222",
+                "variableId": "9",
+                "name": "Browser Client ID",
+                "type": "analytics_storage",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "dataField",
+                        "value": "client_id"
+                    }
+                ],
+                "fingerprint": "1781972290412",
+                "parentFolderId": "5",
+                "formatValue": {}
+            },
+            {
+                "accountId": "1111111111",
+                "containerId": "222222222",
+                "variableId": "10",
+                "name": "Page Title",
+                "type": "j",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "document.title"
+                    }
+                ],
+                "fingerprint": "1781972290412",
+                "parentFolderId": "5",
+                "formatValue": {}
+            },
+            {
+                "accountId": "1111111111",
+                "containerId": "222222222",
+                "variableId": "17",
+                "name": "Environment Stream ID",
+                "type": "remm",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "true"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "input",
+                        "value": "{{Environment Name}}"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "fullMatch",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "replaceAfterMatch",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "defaultValue",
+                        "value": "{{Measurement Stream ID Production}}"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "ignoreCase",
+                        "value": "true"
+                    },
+                    {
+                        "type": "LIST",
+                        "key": "map",
+                        "list": [
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "key",
+                                        "value": "^liv.*"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "value",
+                                        "value": "{{Measurement Stream ID Production}}"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "key",
+                                        "value": "^(pre|de|st|ua|qa|te).*"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "value",
+                                        "value": "{{Measurement Stream ID Development}}"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1781972290415",
+                "parentFolderId": "5",
+                "formatValue": {}
+            },
+            {
+                "accountId": "1111111111",
+                "containerId": "222222222",
+                "variableId": "18",
+                "name": "Measurement Stream RegEx Lookup",
+                "type": "remm",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "true"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "input",
+                        "value": "{{Page URL}}"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "fullMatch",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "replaceAfterMatch",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "defaultValue",
+                        "value": "{{Environment Stream ID}}"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "ignoreCase",
+                        "value": "true"
+                    },
+                    {
+                        "type": "LIST",
+                        "key": "map",
+                        "list": [
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "key",
+                                        "value": "^htt(p|ps)\\:\\/\\/(dev|uat|qa|orig|stg|stage|staging|int|local|admin|aem)[^a-zA-Z\\d\\s]"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "value",
+                                        "value": "{{Measurement Stream ID Development}}"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "key",
+                                        "value": "^htt(p|ps)\\:\\/\\/gtm\\-msr\\.appspot\\.com"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "value",
+                                        "value": "{{Measurement Stream ID Development}}"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "key",
+                                        "value": "\\/rende(r|r2|r\\/|r2\\/)\\?id\\=GTM\\-"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "value",
+                                        "value": "{{Measurement Stream ID Development}}"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1781972290415",
+                "parentFolderId": "5",
+                "formatValue": {}
+            },
+            {
+                "accountId": "1111111111",
+                "containerId": "222222222",
+                "variableId": "29",
+                "name": "Extract First User Session ID Timestamp from Client ID",
+                "type": "remm",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "input",
+                        "value": "{{Browser Client ID}}"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "fullMatch",
+                        "value": "true"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "replaceAfterMatch",
+                        "value": "true"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "ignoreCase",
+                        "value": "true"
+                    },
+                    {
+                        "type": "LIST",
+                        "key": "map",
+                        "list": [
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "key",
+                                        "value": "^(.*)\\.(.*)$"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "value",
+                                        "value": "$2"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1781972290416",
+                "parentFolderId": "5",
+                "formatValue": {}
+            },
+            {
+                "accountId": "1111111111",
+                "containerId": "222222222",
+                "variableId": "31",
+                "name": "Undefined Value",
+                "type": "uv",
+                "fingerprint": "1781972290417",
+                "parentFolderId": "5",
+                "formatValue": {}
+            },
+            {
+                "accountId": "1111111111",
+                "containerId": "222222222",
+                "variableId": "32",
+                "name": "Browser Client ID Append Underscore",
+                "type": "cvt_222222222_15",
+                "notes": "append underscore to address BigQuery double float precision issue by forcing BigQuery to store as string. have to do it this way to prevent the passing of a lone underscore if the client_id is undefined.\nmodified to address issue where _ga cookie value was populated with the text word undefined due to sep 2022 error. also treat blank or any other non _ga cookie value as a javascript undefined so that those cookie contents to contribute to the user parameter value passed to ga4.",
+                "parameter": [
+                    {
+                        "type": "LIST",
+                        "key": "rule_table",
+                        "list": [
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "entry",
+                                        "value": "{{Browser Client ID}}"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "method",
+                                        "value": "matchesRegExIgnoreCase"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "comparator",
+                                        "value": "^[0-9].*"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "returnValue",
+                                        "value": "{{Browser Client ID}}_"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "entry",
+                                        "value": "{{Browser Client ID}}"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "method",
+                                        "value": "matchesRegExIgnoreCase"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "comparator",
+                                        "value": "^(undefined|null|0|true|false|NaN|)$"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "returnValue",
+                                        "value": "{{Undefined Value}}"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "entry",
+                                        "value": "{{Browser Client ID}}"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "method",
+                                        "value": "equals"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "comparator",
+                                        "value": "(not set)"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "returnValue",
+                                        "value": "{{Undefined Value}}"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "entry",
+                                        "value": "{{Browser Client ID}}"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "method",
+                                        "value": "matchesRegExIgnoreCase"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "comparator",
+                                        "value": "^\\s*$"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "returnValue",
+                                        "value": "{{Undefined Value}}"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "entry",
+                                        "value": "{{Browser Client ID}}"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "method",
+                                        "value": "matchesRegExIgnoreCase"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "comparator",
+                                        "value": "^$"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "returnValue",
+                                        "value": "{{Undefined Value}}"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "default_value",
+                        "value": "{{Browser Client ID}}"
+                    }
+                ],
+                "fingerprint": "1781972290417",
+                "parentFolderId": "5",
+                "formatValue": {}
+            },
+            {
+                "accountId": "1111111111",
+                "containerId": "222222222",
+                "variableId": "36",
+                "name": "Google Tag Shared Configuration Settings",
+                "type": "gtcs",
+                "notes": "remove server_container_url {{sGTM Server Container URL}} due to end of free account from Stape.io",
+                "parameter": [
+                    {
+                        "type": "LIST",
+                        "key": "configSettingsTable",
+                        "list": [
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "parameter",
+                                        "value": "debug_mode"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "parameterValue",
+                                        "value": "true"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "parameter",
+                                        "value": "send_page_view"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "parameterValue",
+                                        "value": "false"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1781972290417",
+                "parentFolderId": "5"
+            },
+            {
+                "accountId": "1111111111",
+                "containerId": "222222222",
+                "variableId": "141",
+                "name": "Browser Session ID",
+                "type": "analytics_storage",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "dataField",
+                        "value": "session_id"
+                    }
+                ],
+                "fingerprint": "1781986309858",
+                "parentFolderId": "5",
+                "formatValue": {}
+            },
+            {
+                "accountId": "1111111111",
+                "containerId": "222222222",
+                "variableId": "142",
+                "name": "Browser Session ID RegEx Table",
+                "type": "remm",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "input",
+                        "value": "{{Browser Session ID}}"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "fullMatch",
+                        "value": "true"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "replaceAfterMatch",
+                        "value": "true"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "ignoreCase",
+                        "value": "true"
+                    },
+                    {
+                        "type": "LIST",
+                        "key": "map",
+                        "list": [
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "key",
+                                        "value": "^.*\\.(G-[A-Z0-9]+):(\\d+).*$"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "value",
+                                        "value": "$2"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1781986309859",
+                "parentFolderId": "5",
+                "formatValue": {
+                    "caseConversionType": "LOWERCASE"
+                }
+            },
+            {
+                "accountId": "1111111111",
+                "containerId": "222222222",
+                "variableId": "148",
+                "name": "Timestamp Current",
+                "type": "cvt_222222222_147",
+                "fingerprint": "1781986309861",
+                "parentFolderId": "5",
+                "formatValue": {
+                    "convertToNumber": "PERIOD"
+                }
+            },
+            {
+                "accountId": "1111111111",
+                "containerId": "222222222",
+                "variableId": "149",
+                "name": "Timestamp First User",
+                "type": "cvt_222222222_15",
+                "parameter": [
+                    {
+                        "type": "LIST",
+                        "key": "rule_table",
+                        "list": [
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "entry",
+                                        "value": "{{Extract First User Session ID Timestamp from Client ID}}"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "method",
+                                        "value": "doesNotMatchRegExIgnoreCase"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "comparator",
+                                        "value": "^(undefined|null|1|0|true|false|NaN|)$"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "returnValue",
+                                        "value": "{{Extract First User Session ID Timestamp from Client ID}}000"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "default_value",
+                        "value": "{{Extract First User Session ID Timestamp from Client ID}}"
+                    }
+                ],
+                "fingerprint": "1781986309861",
+                "parentFolderId": "5",
+                "formatValue": {
+                    "convertToNumber": "PERIOD"
+                }
+            },
+            {
+                "accountId": "1111111111",
+                "containerId": "222222222",
+                "variableId": "150",
+                "name": "Timestamp Session Start",
+                "type": "cvt_222222222_15",
+                "parameter": [
+                    {
+                        "type": "LIST",
+                        "key": "rule_table",
+                        "list": [
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "entry",
+                                        "value": "{{Browser Session ID RegEx Table}}"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "method",
+                                        "value": "doesNotMatchRegExIgnoreCase"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "comparator",
+                                        "value": "^(undefined|null|1|0|true|false|NaN|)$"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "returnValue",
+                                        "value": "{{Browser Session ID RegEx Table}}000"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "default_value",
+                        "value": "{{Browser Session ID RegEx Table}}"
+                    }
+                ],
+                "fingerprint": "1781986309861",
+                "parentFolderId": "5",
+                "formatValue": {
+                    "convertToNumber": "PERIOD"
+                }
+            },
+            {
+                "accountId": "1111111111",
+                "containerId": "222222222",
+                "variableId": "156",
+                "name": "Measurement Stream ID RegEx Table",
+                "type": "remm",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "input",
+                        "value": "{{Browser Session ID}}"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "fullMatch",
+                        "value": "true"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "replaceAfterMatch",
+                        "value": "true"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "ignoreCase",
+                        "value": "true"
+                    },
+                    {
+                        "type": "LIST",
+                        "key": "map",
+                        "list": [
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "key",
+                                        "value": "^.*\\.(G-[A-Z0-9]+):.*$"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "value",
+                                        "value": "$1"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1781986309862",
+                "parentFolderId": "5",
+                "formatValue": {}
+            },
+            {
+                "accountId": "1111111111",
+                "containerId": "222222222",
+                "variableId": "157",
+                "name": "Root Domain",
+                "type": "u",
+                "notes": "Root domain of .blogspot.com did not work for Google Blogger. I did not want to do .blogger.com, so changed to page URL host name.",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "stripWww",
+                        "value": "true"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "component",
+                        "value": "HOST"
+                    }
+                ],
+                "fingerprint": "1781986309862",
+                "parentFolderId": "5",
+                "formatValue": {
+                    "caseConversionType": "LOWERCASE"
+                }
+            },
+            {
+                "accountId": "1111111111",
+                "containerId": "222222222",
+                "variableId": "159",
+                "name": "Root Domain - Old",
+                "type": "cvt_222222222_158",
+                "notes": "Used for writing cross domain cookies. did not work with Google Blogger / Blogspot, and i did not want to 'hard code' to use .blogger.com. But works across various other platforms implemented with AEM, Sitecore, WordPress, React.js, etc.",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "inputValue",
+                        "value": "{{Page Hostname}}"
+                    }
+                ],
+                "fingerprint": "1781986309864",
+                "parentFolderId": "5",
+                "formatValue": {
+                    "caseConversionType": "LOWERCASE"
+                }
+            },
+            {
+                "accountId": "1111111111",
+                "containerId": "222222222",
+                "variableId": "399",
+                "name": "Click Element Parent Class Name",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "gtm.element.parentElement.className"
+                    }
+                ],
+                "fingerprint": "1784143530769",
+                "parentFolderId": "378",
+                "formatValue": {}
+            },
+            {
+                "accountId": "1111111111",
+                "containerId": "222222222",
+                "variableId": "431",
+                "name": "Click Element Grandparent Class Name",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "gtm.element.parentElement.parentElement.className"
+                    }
+                ],
+                "fingerprint": "1784143530832",
+                "parentFolderId": "378",
+                "formatValue": {}
+            },
+            {
+                "accountId": "1111111111",
+                "containerId": "222222222",
+                "variableId": "432",
+                "name": "CookieYes Element Interaction",
+                "type": "cvt_222222222_15",
+                "parameter": [
+                    {
+                        "type": "LIST",
+                        "key": "rule_table",
+                        "list": [
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "entry",
+                                        "value": "{{Click Classes}}"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "method",
+                                        "value": "startsWith"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "comparator",
+                                        "value": "cky-"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "returnValue",
+                                        "value": "{{Click Classes}}"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "entry",
+                                        "value": "{{Click Element Parent Class Name}}"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "method",
+                                        "value": "startsWith"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "comparator",
+                                        "value": "cky-"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "returnValue",
+                                        "value": "{{Click Element Parent Class Name}}"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "entry",
+                                        "value": "{{Click Element Grandparent Class Name}}"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "method",
+                                        "value": "startsWith"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "comparator",
+                                        "value": "cky-"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "returnValue",
+                                        "value": "{{Click Element Grandparent Class Name}}"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "entry",
+                                        "value": "{{Click ID}}"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "method",
+                                        "value": "startsWith"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "comparator",
+                                        "value": "cky"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "returnValue",
+                                        "value": "{{Click ID}}"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "entry",
+                                        "value": "{{Click URL}}"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "method",
+                                        "value": "contains"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "comparator",
+                                        "value": "cdn-cookieyes.com/"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "returnValue",
+                                        "value": "{{Click URL}}"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1784143530832",
+                "parentFolderId": "391",
+                "formatValue": {}
+            },
+            {
+                "accountId": "1111111111",
+                "containerId": "222222222",
+                "variableId": "436",
+                "name": "Measurement Stream ID Production",
+                "type": "c",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "value",
+                        "value": "G-AAAAAAAAAA"
+                    }
+                ],
+                "fingerprint": "1784209900263",
+                "parentFolderId": "5",
+                "formatValue": {}
+            },
+            {
+                "accountId": "1111111111",
+                "containerId": "222222222",
+                "variableId": "437",
+                "name": "Measurement Stream ID Development",
+                "type": "c",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "value",
+                        "value": "G-ZZZZZZZZZZ"
+                    }
+                ],
+                "fingerprint": "1784209912877",
+                "parentFolderId": "5",
+                "formatValue": {}
+            },
+            {
+                "accountId": "1111111111",
+                "containerId": "222222222",
+                "variableId": "438",
+                "name": "Google Tag Shared Event Settings",
+                "type": "gtes",
+                "parameter": [
+                    {
+                        "type": "LIST",
+                        "key": "eventSettingsTable",
+                        "list": [
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "parameter",
+                                        "value": "stream_id"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "parameterValue",
+                                        "value": "{{Measurement Stream RegEx Lookup}}"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "parameter",
+                                        "value": "e_session_id"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "parameterValue",
+                                        "value": "{{Browser Session ID RegEx Table}}"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "parameter",
+                                        "value": "e_client_id"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "parameterValue",
+                                        "value": "{{Browser Client ID Append Underscore}}"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "parameter",
+                                        "value": "e_1st_session_ts"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "parameterValue",
+                                        "value": "{{Timestamp Session Start}}"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "parameter",
+                                        "value": "e_cur_session_ts"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "parameterValue",
+                                        "value": "{{Timestamp Current}}"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "parameter",
+                                        "value": "e_1st_user_ts"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "parameterValue",
+                                        "value": "{{Timestamp First User}}"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "parameter",
+                                        "value": "page_title"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "parameterValue",
+                                        "value": "{{Page Title}}"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "LIST",
+                        "key": "userProperties",
+                        "list": [
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "name",
+                                        "value": "u_client_id"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "value",
+                                        "value": "{{Browser Client ID Append Underscore}}"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1784210004703",
+                "parentFolderId": "5"
+            },
+            {
+                "accountId": "1111111111",
+                "containerId": "222222222",
+                "variableId": "444",
+                "name": "Session Duration Cookie Name",
+                "type": "c",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "value",
+                        "value": "_i_vstdur"
+                    }
+                ],
+                "fingerprint": "1784209804575",
+                "parentFolderId": "443",
+                "formatValue": {}
+            },
+            {
+                "accountId": "1111111111",
+                "containerId": "222222222",
+                "variableId": "446",
+                "name": "Microsoft Clarity Project ID",
+                "type": "c",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "value",
+                        "value": "abcde12345"
+                    }
+                ],
+                "fingerprint": "1784209877323",
+                "parentFolderId": "440",
+                "formatValue": {}
+            },
+            {
+                "accountId": "1111111111",
+                "containerId": "222222222",
+                "variableId": "447",
+                "name": "Session Duration dataLayer",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "durationSeconds"
+                    }
+                ],
+                "fingerprint": "1784209804576",
+                "parentFolderId": "443",
+                "formatValue": {}
+            },
+            {
+                "accountId": "1111111111",
+                "containerId": "222222222",
+                "variableId": "452",
+                "name": "is Session Duration Event",
+                "type": "smm",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "true"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "input",
+                        "value": "{{Event}}"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "defaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "LIST",
+                        "key": "map",
+                        "list": [
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "key",
+                                        "value": "{{Session Duration Cookie Name}}"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "value",
+                                        "value": "true"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1784209804586",
+                "parentFolderId": "443",
+                "formatValue": {}
+            }
+        ],
+        "folder": [
+            {
+                "accountId": "1111111111",
+                "containerId": "222222222",
+                "folderId": "5",
+                "name": "Analytics",
+                "fingerprint": "1781972290411"
+            },
+            {
+                "accountId": "1111111111",
+                "containerId": "222222222",
+                "folderId": "378",
+                "name": "Element Hierarchy",
+                "fingerprint": "1783448206694"
+            },
+            {
+                "accountId": "1111111111",
+                "containerId": "222222222",
+                "folderId": "391",
+                "name": "CookieYes CMP",
+                "fingerprint": "1784143530757"
+            },
+            {
+                "accountId": "1111111111",
+                "containerId": "222222222",
+                "folderId": "440",
+                "name": "Microsoft Clarity",
+                "fingerprint": "1784209804574"
+            },
+            {
+                "accountId": "1111111111",
+                "containerId": "222222222",
+                "folderId": "443",
+                "name": "Session Duration",
+                "fingerprint": "1784209804575"
+            }
+        ],
+        "builtInVariable": [
+            {
+                "accountId": "1111111111",
+                "containerId": "222222222",
+                "type": "PAGE_URL",
+                "name": "Page URL"
+            },
+            {
+                "accountId": "1111111111",
+                "containerId": "222222222",
+                "type": "PAGE_HOSTNAME",
+                "name": "Page Hostname"
+            },
+            {
+                "accountId": "1111111111",
+                "containerId": "222222222",
+                "type": "EVENT",
+                "name": "Event"
+            },
+            {
+                "accountId": "1111111111",
+                "containerId": "222222222",
+                "type": "CLICK_CLASSES",
+                "name": "Click Classes"
+            },
+            {
+                "accountId": "1111111111",
+                "containerId": "222222222",
+                "type": "CLICK_ID",
+                "name": "Click ID"
+            },
+            {
+                "accountId": "1111111111",
+                "containerId": "222222222",
+                "type": "CLICK_URL",
+                "name": "Click URL"
+            },
+            {
+                "accountId": "1111111111",
+                "containerId": "222222222",
+                "type": "ENVIRONMENT_NAME",
+                "name": "Environment Name"
+            }
+        ],
+        "fingerprint": "1784210060150",
+        "tagManagerUrl": "https://tagmanager.google.com/#/versions/accounts/1111111111/containers/222222222/versions/0?apiLink=version",
+        "customTemplate": [
+            {
+                "accountId": "1111111111",
+                "containerId": "222222222",
+                "templateId": "15",
+                "name": "If Else If - Advanced Lookup Table",
+                "fingerprint": "1781972290413",
+                "templateData": "___TERMS_OF_SERVICE___\n\nBy creating or modifying this file you agree to Google Tag Manager's Community\nTemplate Gallery Developer Terms of Service available at\nhttps://developers.google.com/tag-manager/gallery-tos (or such other URL as\nGoogle may provide), as modified from time to time.\n\n\n___INFO___\n\n{\n  \"displayName\": \"If Else If - Advanced Lookup Table\",\n  \"description\": \"An advanced lookup table with multiple tests and returns (by Sublimetrix)\",\n  \"securityGroups\": [],\n  \"id\": \"cvt_temp_public_id\",\n  \"type\": \"MACRO\",\n  \"version\": 1,\n  \"containerContexts\": [\n    \"WEB\"\n  ],\n  \"brand\": {\n    \"displayName\": \"sublimetrix\",\n    \"id\": \"github.com_sublimetrix\"\n  }\n}\n\n\n___TEMPLATE_PARAMETERS___\n\n[\n  {\n    \"displayName\": \"Documentation : https://github.com/sublimetrix/gtm-template-ifelseif\",\n    \"name\": \"documentation\",\n    \"type\": \"LABEL\"\n  },\n  {\n    \"alwaysInSummary\": false,\n    \"displayName\": \"Rule table\",\n    \"name\": \"rule_table\",\n    \"simpleTableColumns\": [\n      {\n        \"valueValidators\": [\n          {\n            \"type\": \"NON_EMPTY\"\n          }\n        ],\n        \"defaultValue\": \"\",\n        \"displayName\": \"If\",\n        \"name\": \"entry\",\n        \"type\": \"TEXT\"\n      },\n      {\n        \"selectItems\": [\n          {\n            \"displayValue\": \"equals\",\n            \"value\": \"equals\"\n          },\n          {\n            \"displayValue\": \"contains\",\n            \"value\": \"contains\"\n          },\n          {\n            \"displayValue\": \"starts with\",\n            \"value\": \"startsWith\"\n          },\n          {\n            \"displayValue\": \"ends with\",\n            \"value\": \"endsWith\"\n          },\n          {\n            \"displayValue\": \"matches RegEx\",\n            \"value\": \"matchesRegEx\"\n          },\n          {\n            \"displayValue\": \"matches RegEx (ignore case)\",\n            \"value\": \"matchesRegExIgnoreCase\"\n          },\n          {\n            \"displayValue\": \"does not equal\",\n            \"value\": \"doesNotEqual\"\n          },\n          {\n            \"displayValue\": \"does not contain\",\n            \"value\": \"doesNotContain\"\n          },\n          {\n            \"displayValue\": \"does not start with\",\n            \"value\": \"doesNotStartWith\"\n          },\n          {\n            \"displayValue\": \"does not end with\",\n            \"value\": \"doesNotEndWith\"\n          },\n          {\n            \"displayValue\": \"does not match RegEx\",\n            \"value\": \"doesNotMatchRegEx\"\n          },\n          {\n            \"displayValue\": \"does not match RegEx (ignore case)\",\n            \"value\": \"doesNotMatchRegExIgnoreCase\"\n          },\n          {\n            \"displayValue\": \"less than\",\n            \"value\": \"lessThan\"\n          },\n          {\n            \"displayValue\": \"less than or equal to\",\n            \"value\": \"lessThanOrEqualTo\"\n          },\n          {\n            \"displayValue\": \"greater than\",\n            \"value\": \"greaterThan\"\n          },\n          {\n            \"displayValue\": \"greater than or equal to\",\n            \"value\": \"greaterThanOrEqualTo\"\n          }\n        ],\n        \"defaultValue\": \"equals\",\n        \"displayName\": \"Matches\",\n        \"name\": \"method\",\n        \"type\": \"SELECT\"\n      },\n      {\n        \"valueValidators\": [\n          {\n            \"type\": \"NON_EMPTY\"\n          }\n        ],\n        \"defaultValue\": \"\",\n        \"displayName\": \"This\",\n        \"name\": \"comparator\",\n        \"isUnique\": false,\n        \"type\": \"TEXT\"\n      },\n      {\n        \"selectItems\": [],\n        \"valueValidators\": [\n          {\n            \"type\": \"NON_EMPTY\"\n          }\n        ],\n        \"defaultValue\": \"\",\n        \"displayName\": \"Return\",\n        \"name\": \"returnValue\",\n        \"type\": \"TEXT\"\n      }\n    ],\n    \"type\": \"SIMPLE_TABLE\",\n    \"newRowButtonText\": \"Else If\"\n  },\n  {\n    \"displayName\": \"Else (default value, leave empty to return undefined)\",\n    \"simpleValueType\": true,\n    \"name\": \"default_value\",\n    \"type\": \"TEXT\"\n  }\n]\n\n\n___SANDBOXED_JS_FOR_WEB_TEMPLATE___\n\n//const log = require('logToConsole');\n//log('data =', data);\nconst defaultValue = data.default_value;\n\nconst RULE = {\n  equals: (entry,comp) => {\n  \treturn entry == comp;\n  },\n  contains: (entry,comp) => {\n  \treturn (-1 < entry.indexOf(comp));\n  },\n  startsWith: (entry,comp) => {\n  \treturn entry.match('^('+comp+')');\n  },\n  endsWith: (entry,comp) => {\n  \treturn entry.match('('+comp+')$');\n  },\n  /***\n   *** not available\n  matchesCssSelector: (entry,comp) => {\n  \treturn entry.match(comp); // wip\n  },\n  ***/\n  matchesRegEx: (entry,comp) => {\n  \treturn entry.match(comp);\n  },\n  matchesRegExIgnoreCase: (entry,comp) => {\n  \treturn entry.toLowerCase().match(comp.toLowerCase());\n  },\n  doesNotEqual: (entry,comp) => {\n  \treturn entry != comp;\n  },\n  doesNotContain: (entry,comp) => {\n  \treturn (-1 > entry.indexOf(comp));\n  },\n  doesNotStartWith: (entry,comp) => {\n  \treturn !entry.match('^('+comp+')');\n  },\n  doesNotEndWith: (entry,comp) => {\n  \treturn !entry.match('('+comp+')$');\n  },\n  /***\n   *** not available\n  doesNotMatchCssSelector: (entry,comp) => {\n  \treturn false; // wip\n  },\n  ***/\n  doesNotMatchRegEx: (entry,comp) => {\n  \treturn !entry.match(comp);\n  },\n  doesNotMatchRegExIgnoreCase: (entry,comp) => {\n  \treturn !entry.toLowerCase().match(comp.toLowerCase());\n  },\n  lessThan: (entry,comp) => {\n  \treturn entry < comp;\n  },\n  lessThanOrEqualTo: (entry,comp) => {\n  \treturn entry <= comp;\n  },\n  greaterThan: (entry,comp) => {\n  \treturn entry > comp;\n  },\n  greaterThanOrEqualTo: (entry,comp) => {\n  \treturn entry >= comp;\n  }\n};\n\nconst rules = data.rule_table;\nif ('undefined' != typeof rules) {\n  for (let i=0; i<rules.length; i++) {\n    const rule = rules[i];\n    if ( RULE[rule.method](resolve(rule.entry),resolve(rule.comparator)) ) return rule.returnValue;\n  }\n}\n\nfunction resolve(x)\n{\n  switch (typeof x) {\n    case 'undefined': x = typeof x; break;\n    case 'boolean': x = x ? 'true' : 'false'; break;\n  }\n  return x;\n}\n\nreturn defaultValue;\n\n\n___TESTS___\n\nscenarios: []\n\n\n___NOTES___\n\n/*** SUBLIMETRIX ***/\nVersion: 1.0.0\nAuthor: Sublimetrix\nDate: 2019.10.09\n/*******************/\n\nChange Log:\n1.0.0: Initial Version\n1.1.0: Default value\n1.1.1: Fix boolean issue + remove log requirement\n1.1.2: Optimization\n1.2.0: Name change\n1.2.1: Fix on \"contains\" & \"does not contains\" comparators\n\n\n",
+                "galleryReference": {
+                    "host": "github.com",
+                    "owner": "sublimetrix",
+                    "repository": "gtm-template-ifelseif",
+                    "version": "1a2a5ad38afc4539d9adde44db786eac0cc70071",
+                    "signature": "ae330cad0667e003bca886ae2419515e9b5a894b5ea88607d9edd2f2c65015b7"
+                }
+            },
+            {
+                "accountId": "1111111111",
+                "containerId": "222222222",
+                "templateId": "147",
+                "name": "Timestamp",
+                "fingerprint": "1781986309860",
+                "templateData": "___TERMS_OF_SERVICE___\n\nBy creating or modifying this file you agree to Google Tag Manager's Community\nTemplate Gallery Developer Terms of Service available at\nhttps://developers.google.com/tag-manager/gallery-tos (or such other URL as\nGoogle may provide), as modified from time to time.\n\n\n___INFO___\n\n{\n  \"type\": \"MACRO\",\n  \"id\": \"cvt_temp_public_id\",\n  \"version\": 1,\n  \"securityGroups\": [],\n  \"displayName\": \"Timestamp\",\n  \"categories\": [\n    \"UTILITY\",\n    \"TAG_MANAGEMENT\"\n  ],\n  \"description\": \"Returns a \\u003cstrong\\u003enumber\\u003c/strong\\u003e that represents the current time in milliseconds since the epoch (UTC timezone).\",\n  \"containerContexts\": [\n    \"WEB\"\n  ],\n  \"brand\": {\n    \"displayName\": \"luratic\",\n    \"id\": \"github.com_luratic\"\n  }\n}\n\n\n___TEMPLATE_PARAMETERS___\n\n[\n  {\n    \"type\": \"LABEL\",\n    \"name\": \"Documentation\",\n    \"displayName\": \"\\u003cstrong\\u003e\\u003ca href\\u003d\\\"https://www.luratic.com/posts/templates/variables/timestamp/\\\"\\u003eDocumentation\\u003c/a\\u003e\\u003c/strong\\u003e\"\n  }\n]\n\n\n___SANDBOXED_JS_FOR_WEB_TEMPLATE___\n\nconst getTimestampMillis = require ('getTimestampMillis');\nreturn getTimestampMillis();\n\n\n___TESTS___\n\nscenarios:\n- name: Variable result is defined\n  code: |-\n    // Call runCode to run the template's code.\n    let variableResult = runCode();\n\n    // Validate that the result of runCode is defined.\n    assertThat(variableResult).isDefined();\n\n\n___NOTES___\n\nDeveloped with ❤ by: Alfonso, Txema and Brais.\nWeb: www.luratic.com\nLinkedin: \nhttps://www.linkedin.com/in/braiscalvo/\nhttps://www.linkedin.com/in/alfonsorc/\nhttps://www.linkedin.com/in/txema-s%C3%A1nchez-a48482ba/\n\n\n",
+                "galleryReference": {
+                    "host": "github.com",
+                    "owner": "luratic",
+                    "repository": "Timestamp",
+                    "version": "8c2e414949799e1622d01e5097d8af4797b758af",
+                    "signature": "234fd14363c605c7a3eaec51533f430b5e47d782bcf4d228fc6409113b3ea35e"
+                }
+            },
+            {
+                "accountId": "1111111111",
+                "containerId": "222222222",
+                "templateId": "158",
+                "name": "Get Root Domain",
+                "fingerprint": "1781986309862",
+                "templateData": "___TERMS_OF_SERVICE___\n\nBy creating or modifying this file you agree to Google Tag Manager's Community\nTemplate Gallery Developer Terms of Service available at\nhttps://developers.google.com/tag-manager/gallery-tos (or such other URL as\nGoogle may provide), as modified from time to time.\n\n\n___INFO___\n\n{\n  \"type\": \"MACRO\",\n  \"id\": \"cvt_temp_public_id\",\n  \"version\": 1,\n  \"securityGroups\": [],\n  \"displayName\": \"Get Root Domain\",\n  \"categories\": [\n    \"UTILITY\"\n  ],\n  \"description\": \"Extract Root domain from hostname or URL\",\n  \"containerContexts\": [\n    \"WEB\"\n  ],\n  \"brand\": {\n    \"displayName\": \"mbaersch\",\n    \"id\": \"github.com_mbaersch\"\n  }\n}\n\n\n___TEMPLATE_PARAMETERS___\n\n[\n  {\n    \"type\": \"TEXT\",\n    \"name\": \"inputValue\",\n    \"displayName\": \"Host or URL\",\n    \"simpleValueType\": true\n  }\n]\n\n\n___SANDBOXED_JS_FOR_WEB_TEMPLATE___\n\n//input may be hostname or URL\nvar domain = data.inputValue||\"\";\nvar x = domain.indexOf('//');\n\n//protocol-relative URL or hostname only?\nif (x === 0) domain = 'https:'+domain;  \nelse if (x<0) domain = \"https://\"+domain;\n\n//try to extract from complete URL\nvar urlData = require(\"parseUrl\")(domain);\nif (urlData && urlData.hostname) domain = urlData.hostname;\n\n//delete path if still present due to incomplete input\ndomain = domain.split('/')[0];\n\n//extracting root domain as demonstrated here: \n//https://gist.github.com/RavenHursT/fe8a95a59109096ac1f8?permalink_comment_id=3869493#gistcomment-3869493\nconst elems = domain.split('.');\nconst iMax = elems.length - 1;\nconst isSecondLevel = elems.length >= 3 && (elems[iMax] + elems[iMax - 1]).length <= 5;\nreturn elems.splice( isSecondLevel ? -3 : -2 ).join('.');\n\n\n___TESTS___\n\nscenarios: []\n\n\n___NOTES___\n\nCreated on 24.8.2022, 17:38:42\n\n\n",
+                "galleryReference": {
+                    "host": "github.com",
+                    "owner": "mbaersch",
+                    "repository": "get-root-domain",
+                    "version": "d316df624417f3027b1de216572ab9fe6ebcf208",
+                    "signature": "ab1809f2060c063a86a1dfa4783093b76eb69b0e27ae13ac4e94e1cc67298eb0"
+                }
+            },
+            {
+                "accountId": "1111111111",
+                "containerId": "222222222",
+                "templateId": "439",
+                "name": "Microsoft Clarity Events",
+                "fingerprint": "1784209804564",
+                "templateData": "___TERMS_OF_SERVICE___\n\nBy creating or modifying this file you agree to Google Tag Manager's Community\nTemplate Gallery Developer Terms of Service available at\nhttps://developers.google.com/tag-manager/gallery-tos (or such other URL as\nGoogle may provide), as modified from time to time.\n\n\n___INFO___\n\n{\n  \"type\": \"TAG\",\n  \"id\": \"cvt_WV8T5\",\n  \"version\": 1,\n  \"displayName\": \"Microsoft Clarity Events\",\n  \"categories\": [\n    \"ANALYTICS\",\n    \"HEAT_MAP\",\n    \"SESSION_RECORDING\"\n  ],\n  \"brand\": {\n    \"id\": \"github.com_mbaersch\",\n    \"displayName\": \"mbaersch\",\n    \"thumbnail\": \"data:image/png;base64,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\\u003d\"\n  },\n  \"description\": \"Send API events (for use as \\\"Smart events\\\") to Microsoft Clarity. Additional options to set custom tags, consent or upgrade a session. Existing Clarity standard tagging required.\",\n  \"containerContexts\": [\n    \"WEB\"\n  ]\n}\n\n\n___TEMPLATE_PARAMETERS___\n\n[\n  {\n    \"type\": \"CHECKBOX\",\n    \"name\": \"sendEvent\",\n    \"checkboxText\": \"Send event\",\n    \"simpleValueType\": true,\n    \"defaultValue\": true\n  },\n  {\n    \"type\": \"TEXT\",\n    \"name\": \"eventName\",\n    \"displayName\": \"Event Name\",\n    \"simpleValueType\": true,\n    \"valueValidators\": [\n      {\n        \"type\": \"NON_EMPTY\"\n      }\n    ],\n    \"enablingConditions\": [\n      {\n        \"paramName\": \"sendEvent\",\n        \"paramValue\": true,\n        \"type\": \"EQUALS\"\n      }\n    ]\n  },\n  {\n    \"type\": \"CHECKBOX\",\n    \"name\": \"setTags\",\n    \"checkboxText\": \"Set custom tags\",\n    \"simpleValueType\": true\n  },\n  {\n    \"type\": \"PARAM_TABLE\",\n    \"name\": \"customTags\",\n    \"displayName\": \"Custom tags\",\n    \"paramTableColumns\": [\n      {\n        \"param\": {\n          \"type\": \"TEXT\",\n          \"name\": \"tagKey\",\n          \"displayName\": \"Key\",\n          \"simpleValueType\": true\n        },\n        \"isUnique\": true\n      },\n      {\n        \"param\": {\n          \"type\": \"TEXT\",\n          \"name\": \"tagValue\",\n          \"displayName\": \"Value\",\n          \"simpleValueType\": true\n        },\n        \"isUnique\": false\n      }\n    ],\n    \"enablingConditions\": [\n      {\n        \"paramName\": \"setTags\",\n        \"paramValue\": true,\n        \"type\": \"EQUALS\"\n      }\n    ]\n  },\n  {\n    \"type\": \"CHECKBOX\",\n    \"name\": \"upgradeSession\",\n    \"checkboxText\": \"Upgrade session\",\n    \"simpleValueType\": true\n  },\n  {\n    \"type\": \"TEXT\",\n    \"name\": \"upgradeReason\",\n    \"displayName\": \"Upgrade reason\",\n    \"simpleValueType\": true,\n    \"valueValidators\": [\n      {\n        \"type\": \"NON_EMPTY\"\n      }\n    ],\n    \"enablingConditions\": [\n      {\n        \"paramName\": \"upgradeSession\",\n        \"paramValue\": true,\n        \"type\": \"EQUALS\"\n      }\n    ],\n    \"help\": \"Upgrade a session to prioritize for recording when \\u003e 100,000 sessions / day occur. A reason is required.\"\n  },\n  {\n    \"type\": \"CHECKBOX\",\n    \"name\": \"setConsent\",\n    \"checkboxText\": \"Set consent\",\n    \"simpleValueType\": true\n  },\n  {\n    \"type\": \"SELECT\",\n    \"name\": \"analyticsStorage\",\n    \"displayName\": \"Analytics storage\",\n    \"macrosInSelect\": true,\n    \"selectItems\": [\n      {\n        \"value\": \"granted\",\n        \"displayValue\": \"granted\"\n      },\n      {\n        \"value\": \"denied\",\n        \"displayValue\": \"denied\"\n      }\n    ],\n    \"simpleValueType\": true,\n    \"enablingConditions\": [\n      {\n        \"paramName\": \"setConsent\",\n        \"paramValue\": true,\n        \"type\": \"EQUALS\"\n      }\n    ],\n    \"help\": \"When using a variable, make sure to use a boolean variable or provide a string value of \\\"true\\\" or \\\"granted\\\" to set consent and activate cookies. Everything else will set consent to \\\"false\\\"\",\n    \"defaultValue\": \"granted\"\n  },\n  {\n    \"type\": \"SELECT\",\n    \"name\": \"adStorage\",\n    \"displayName\": \"Ad storage\",\n    \"macrosInSelect\": true,\n    \"selectItems\": [\n      {\n        \"value\": \"granted\",\n        \"displayValue\": \"granted\"\n      },\n      {\n        \"value\": \"denied\",\n        \"displayValue\": \"denied\"\n      }\n    ],\n    \"simpleValueType\": true,\n    \"enablingConditions\": [\n      {\n        \"paramName\": \"setConsent\",\n        \"paramValue\": true,\n        \"type\": \"EQUALS\"\n      }\n    ],\n    \"help\": \"When using a variable, make sure to use a boolean variable or provide a string value of \\\"true\\\" or \\\"granted\\\" to set consent and activate cookies. Everything else will set consent to \\\"false\\\"\",\n    \"defaultValue\": \"granted\"\n  }\n]\n\n\n___SANDBOXED_JS_FOR_WEB_TEMPLATE___\n\nconst createArgumentsQueue = require('createArgumentsQueue');\nconst makeString = require('makeString');\nconst clarity = createArgumentsQueue('clarity', 'clarity.q');\n\nif (data.sendEvent === true) {\n  clarity(\"event\", makeString(data.eventName));\n}\n\nif (data.setTags === true && data.customTags) {\n  data.customTags.forEach(x => {\n    clarity('set', makeString(x.tagKey), makeString(x.tagValue));\n  });\n}\n\nif (data.upgradeSession === true && data.upgradeReason) {\n  clarity('upgrade', makeString(data.upgradeReason));\n}\n\nif (data.setConsent === true) {\n\n  let adStorageValue = makeString(data.adStorage||\"denied\").toLowerCase(); \n  adStorageValue = (adStorageValue == \"granted\" || adStorageValue == \"true\") ? \"granted\" : \"denied\";\n  let analyticsStorageValue = makeString(data.analyticsStorage||\"denied\").toLowerCase(); \n  analyticsStorageValue = (analyticsStorageValue == \"granted\" || analyticsStorageValue == \"true\") ? \"granted\" : \"denied\";\n  \n  clarity('consentv2',{\n    ad_Storage: adStorageValue, \n    analytics_Storage: analyticsStorageValue \n  });\n}\n\ndata.gtmOnSuccess();\n\n\n___WEB_PERMISSIONS___\n\n[\n  {\n    \"instance\": {\n      \"key\": {\n        \"publicId\": \"access_globals\",\n        \"versionId\": \"1\"\n      },\n      \"param\": [\n        {\n          \"key\": \"keys\",\n          \"value\": {\n            \"type\": 2,\n            \"listItem\": [\n              {\n                \"type\": 3,\n                \"mapKey\": [\n                  {\n                    \"type\": 1,\n                    \"string\": \"key\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"read\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"write\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"execute\"\n                  }\n                ],\n                \"mapValue\": [\n                  {\n                    \"type\": 1,\n                    \"string\": \"clarity\"\n                  },\n                  {\n                    \"type\": 8,\n                    \"boolean\": true\n                  },\n                  {\n                    \"type\": 8,\n                    \"boolean\": true\n                  },\n                  {\n                    \"type\": 8,\n                    \"boolean\": true\n                  }\n                ]\n              },\n              {\n                \"type\": 3,\n                \"mapKey\": [\n                  {\n                    \"type\": 1,\n                    \"string\": \"key\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"read\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"write\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"execute\"\n                  }\n                ],\n                \"mapValue\": [\n                  {\n                    \"type\": 1,\n                    \"string\": \"clarity.q\"\n                  },\n                  {\n                    \"type\": 8,\n                    \"boolean\": true\n                  },\n                  {\n                    \"type\": 8,\n                    \"boolean\": true\n                  },\n                  {\n                    \"type\": 8,\n                    \"boolean\": true\n                  }\n                ]\n              }\n            ]\n          }\n        }\n      ]\n    },\n    \"clientAnnotations\": {\n      \"isEditedByUser\": true\n    },\n    \"isRequired\": true\n  }\n]\n\n\n___TESTS___\n\nscenarios: []\n\n\n___NOTES___\n\nCreated on 10/25/2024, 02:42:42 AM\n\n\n",
+                "galleryReference": {
+                    "host": "github.com",
+                    "owner": "mbaersch",
+                    "repository": "clarity-events",
+                    "version": "c88432a1b5f2bbfcac6aa83df42443c918ca5acb",
+                    "signature": "a0f3f6f0e7494145ca06f9f656c2355c92392272371cf18f3ed72407b01914dd",
+                    "galleryTemplateId": "WV8T5"
+                }
+            },
+            {
+                "accountId": "1111111111",
+                "containerId": "222222222",
+                "templateId": "445",
+                "name": "Session or User Seconds Duration",
+                "fingerprint": "1784209804575",
+                "templateData": "___INFO___\n\n{\n  \"type\": \"TAG\",\n  \"id\": \"cvt_temp_public_id\",\n  \"version\": 1,\n  \"securityGroups\": [],\n  \"displayName\": \"Session or User Seconds Duration\",\n  \"brand\": {\n    \"id\": \"brand_dummy\",\n    \"displayName\": \"drewspen\",\n    \"thumbnail\": \"data:image/jpeg;base64,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\\u003d\\u003d\"\n  },\n  \"description\": \"User session duration for site visits measured in seconds using first party cookie\",\n  \"containerContexts\": [\n    \"WEB\"\n  ]\n}\n\n\n___TEMPLATE_PARAMETERS___\n\n[\n  {\n    \"type\": \"SELECT\",\n    \"name\": \"rootDomain\",\n    \"displayName\": \"rootDomain\",\n    \"macrosInSelect\": true,\n    \"selectItems\": [],\n    \"simpleValueType\": true,\n    \"valueValidators\": [\n      {\n        \"type\": \"NON_EMPTY\"\n      }\n    ],\n    \"defaultValue\": \"{{Root Domain}}\"\n  },\n  {\n    \"type\": \"RADIO\",\n    \"name\": \"cookieDuration\",\n    \"displayName\": \"cookieDuration\",\n    \"radioItems\": [\n      {\n        \"value\": \"sessionCookie\",\n        \"displayValue\": \"sessionCookie\"\n      },\n      {\n        \"value\": \"persistentCookie\",\n        \"displayValue\": \"persistentCookie\"\n      }\n    ],\n    \"simpleValueType\": true,\n    \"defaultValue\": \"sessionCookie\",\n    \"valueValidators\": [\n      {\n        \"type\": \"NON_EMPTY\"\n      }\n    ]\n  },\n  {\n    \"type\": \"TEXT\",\n    \"name\": \"persistentCookieExpires\",\n    \"displayName\": \"persistentCookieExpires in days (unused if sessionCookie)\",\n    \"simpleValueType\": true,\n    \"valueValidators\": [\n      {\n        \"type\": \"POSITIVE_NUMBER\"\n      }\n    ],\n    \"defaultValue\": 365\n  },\n  {\n    \"type\": \"TEXT\",\n    \"name\": \"durationCookie\",\n    \"displayName\": \"durationCookie\",\n    \"simpleValueType\": true,\n    \"defaultValue\": \"duration\",\n    \"valueValidators\": [\n      {\n        \"type\": \"NON_EMPTY\"\n      },\n      {\n        \"type\": \"REGEX\",\n        \"args\": [\n          \"^[a-zA-Z0-9_]{0,40}$\"\n        ]\n      }\n    ]\n  },\n  {\n    \"type\": \"TEXT\",\n    \"name\": \"maxSeconds\",\n    \"displayName\": \"maxSeconds\",\n    \"simpleValueType\": true,\n    \"defaultValue\": 11,\n    \"valueValidators\": [\n      {\n        \"type\": \"NON_NEGATIVE_NUMBER\"\n      }\n    ]\n  }\n]\n\n\n___SANDBOXED_JS_FOR_WEB_TEMPLATE___\n\nconst log             = require('logToConsole');\nconst getCookieValues = require('getCookieValues');\nconst setCookie       = require('setCookie');\nconst createQueue     = require('createQueue');\nconst dataLayerPush   = createQueue('dataLayer');\nconst callLater       = require('callLater');\nconst getTimestamp    = require('getTimestamp');\nconst cookieName      = data.durationCookie || 'duration';\nconst maxSecondsNum   = (data.maxSeconds || 11) - 0;\nconst cookieOptions = data.cookieDuration === 'persistentCookie'\n  ? { domain: data.rootDomain, path: '/', 'max-age': 60 * 60 * 24 * (data.persistentCookieExpires - 0) }\n  : { domain: data.rootDomain, path: '/' };\nconst existingValues = getCookieValues(cookieName);\nconst existing       = (existingValues && existingValues.length > 0) ? existingValues[0] : null;\nconst existingNum    = existing - 0;\nlet counter          = (existing !== null && existing !== '' && existingNum === existingNum) ? existingNum : 0;\nif (existing === null || existing === '') {\n  setCookie(cookieName, '0', cookieOptions);\n}\nconst intervalMs = 1000;\nlet lastTick = getTimestamp();\nfunction tick() {\n  if (counter >= maxSecondsNum) return;\n  const now = getTimestamp();\n  if ((now - lastTick) >= intervalMs) {\n    lastTick = now;\n    counter = counter - (-1);\n    setCookie(cookieName, counter + '', cookieOptions);\n    dataLayerPush({\n      event: cookieName,\n      durationSeconds: counter\n    });\n    if (counter < maxSecondsNum) { callLater(tick); }\n  } else { callLater(tick); }\n}\ncallLater(tick);\ndata.gtmOnSuccess();\n\n\n___WEB_PERMISSIONS___\n\n[\n  {\n    \"instance\": {\n      \"key\": {\n        \"publicId\": \"get_cookies\",\n        \"versionId\": \"1\"\n      },\n      \"param\": [\n        {\n          \"key\": \"cookieAccess\",\n          \"value\": {\n            \"type\": 1,\n            \"string\": \"any\"\n          }\n        }\n      ]\n    },\n    \"clientAnnotations\": {\n      \"isEditedByUser\": true\n    },\n    \"isRequired\": true\n  },\n  {\n    \"instance\": {\n      \"key\": {\n        \"publicId\": \"set_cookies\",\n        \"versionId\": \"1\"\n      },\n      \"param\": [\n        {\n          \"key\": \"allowedCookies\",\n          \"value\": {\n            \"type\": 2,\n            \"listItem\": [\n              {\n                \"type\": 3,\n                \"mapKey\": [\n                  {\n                    \"type\": 1,\n                    \"string\": \"name\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"domain\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"path\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"secure\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"session\"\n                  }\n                ],\n                \"mapValue\": [\n                  {\n                    \"type\": 1,\n                    \"string\": \"*\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"*\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"*\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"any\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"any\"\n                  }\n                ]\n              }\n            ]\n          }\n        }\n      ]\n    },\n    \"clientAnnotations\": {\n      \"isEditedByUser\": true\n    },\n    \"isRequired\": true\n  },\n  {\n    \"instance\": {\n      \"key\": {\n        \"publicId\": \"access_globals\",\n        \"versionId\": \"1\"\n      },\n      \"param\": [\n        {\n          \"key\": \"keys\",\n          \"value\": {\n            \"type\": 2,\n            \"listItem\": [\n              {\n                \"type\": 3,\n                \"mapKey\": [\n                  {\n                    \"type\": 1,\n                    \"string\": \"key\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"read\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"write\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"execute\"\n                  }\n                ],\n                \"mapValue\": [\n                  {\n                    \"type\": 1,\n                    \"string\": \"dataLayer\"\n                  },\n                  {\n                    \"type\": 8,\n                    \"boolean\": true\n                  },\n                  {\n                    \"type\": 8,\n                    \"boolean\": true\n                  },\n                  {\n                    \"type\": 8,\n                    \"boolean\": true\n                  }\n                ]\n              }\n            ]\n          }\n        }\n      ]\n    },\n    \"clientAnnotations\": {\n      \"isEditedByUser\": true\n    },\n    \"isRequired\": true\n  },\n  {\n    \"instance\": {\n      \"key\": {\n        \"publicId\": \"logging\",\n        \"versionId\": \"1\"\n      },\n      \"param\": [\n        {\n          \"key\": \"environments\",\n          \"value\": {\n            \"type\": 1,\n            \"string\": \"debug\"\n          }\n        }\n      ]\n    },\n    \"clientAnnotations\": {\n      \"isEditedByUser\": true\n    },\n    \"isRequired\": true\n  }\n]\n\n\n___TESTS___\n\nscenarios: []\n\n\n___NOTES___\n\n\n\n\n"
+            },
+            {
+                "accountId": "1111111111",
+                "containerId": "222222222",
+                "templateId": "449",
+                "name": "Microsoft Clarity - Official",
+                "fingerprint": "1784209804576",
+                "templateData": "___TERMS_OF_SERVICE___\n\nBy creating or modifying this file you agree to Google Tag Manager's Community\nTemplate Gallery Developer Terms of Service available at\nhttps://developers.google.com/tag-manager/gallery-tos (or such other URL as\nGoogle may provide), as modified from time to time.\n\n\n___INFO___\n\n{\n  \"type\": \"TAG\",\n  \"id\": \"cvt_MQDKZ\",\n  \"version\": 1,\n  \"displayName\": \"Microsoft Clarity - Official\",\n  \"categories\": [\n    \"ANALYTICS\",\n    \"HEAT_MAP\",\n    \"SESSION_RECORDING\"\n  ],\n  \"brand\": {\n    \"id\": \"github.com_microsoft\",\n    \"displayName\": \"microsoft\",\n    \"thumbnail\": \"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACABAMAAAAxEHz4AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAElBMVEUAAADyUCJ/ugAApO//uQD///8951e2AAAAAXRSTlMAQObYZgAAAAFiS0dEBfhv6ccAAAAHdElNRQfkCgUWITsZUDiiAAAAS0lEQVRo3u3MQQ3AIAAEsMuCAGZhCkiwgH9NOLj3Hq2A5q1m8nxVBAKBQCAQCAQCgUAgEPSAP9jVSsapBAKBQCAQCAQCgUAgEPTgAruK0CdlWNSzAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDIwLTEwLTA1VDIyOjMzOjU5KzAwOjAwPT1n8QAAACV0RVh0ZGF0ZTptb2RpZnkAMjAyMC0xMC0wNVQyMjozMzo1OSswMDowMExg300AAAAASUVORK5CYII\\u003d\"\n  },\n  \"description\": \"Clarity is a user behavior analytics tool, which helps you understand how users are interacting with your website. Supported features include:\\nSession Recordings\\nHeatmaps\\nML Insights\",\n  \"containerContexts\": [\n    \"WEB\"\n  ]\n}\n\n\n___TEMPLATE_PARAMETERS___\n\n[\n  {\n    \"type\": \"TEXT\",\n    \"name\": \"projectId\",\n    \"displayName\": \"Clarity Project Id\",\n    \"simpleValueType\": true,\n    \"help\": \"Copy your clarity project Id here. You can find it in the project Url from the browser. Example: https://clarity.microsoft.com/projects/view/\\\"projectId\\\"/\",\n    \"valueValidators\": [\n      {\n        \"type\": \"NON_EMPTY\",\n        \"errorMessage\": \"You must provide a clarity project Id\"\n      },\n      {\n        \"type\": \"REGEX\",\n        \"args\": [\n          \"[0-9a-z]+\"\n        ],\n        \"errorMessage\": \"Incorrect project Id. You can find it in the project Url from the browser. Example: https://clarity.microsoft.com/projects/view/\\\"projectId\\\"/\"\n      }\n    ]\n  },\n  {\n    \"type\": \"GROUP\",\n    \"name\": \"advanced\",\n    \"displayName\": \"Custom Options\",\n    \"groupStyle\": \"ZIPPY_CLOSED\",\n    \"subParams\": [\n      {\n        \"type\": \"GROUP\",\n        \"name\": \"custom_id\",\n        \"displayName\": \"Custom Identifiers\",\n        \"groupStyle\": \"NO_ZIPPY\",\n        \"subParams\": [\n          {\n            \"type\": \"TEXT\",\n            \"name\": \"userId\",\n            \"displayName\": \"Custom Id\",\n            \"simpleValueType\": true,\n            \"help\": \"Custom id such as an email, can help you view the user journey across browsers and devices\",\n            \"valueHint\": \"user@domain.com\"\n          },\n          {\n            \"type\": \"TEXT\",\n            \"name\": \"sessionId\",\n            \"displayName\": \"Session Id\",\n            \"simpleValueType\": true,\n            \"help\": \"Custom session id to help you filter for this session later\",\n            \"enablingConditions\": [\n              {\n                \"paramName\": \"userId\",\n                \"paramValue\": \"\",\n                \"type\": \"PRESENT\"\n              }\n            ],\n            \"valueHint\": \"custom-session-id\"\n          },\n          {\n            \"type\": \"TEXT\",\n            \"name\": \"pageId\",\n            \"displayName\": \"Page Id\",\n            \"simpleValueType\": true,\n            \"help\": \"Custom page id to help you filter for this page later\",\n            \"enablingConditions\": [\n              {\n                \"paramName\": \"userId\",\n                \"paramValue\": \"\",\n                \"type\": \"PRESENT\"\n              }\n            ],\n            \"valueHint\": \"custom-page-id\"\n          },\n          {\n            \"type\": \"TEXT\",\n            \"name\": \"friendlyName\",\n            \"displayName\": \"Friendly Name\",\n            \"simpleValueType\": true,\n            \"help\": \"Friendly name for the user\",\n            \"enablingConditions\": [\n              {\n                \"paramName\": \"userId\",\n                \"paramValue\": \"\",\n                \"type\": \"PRESENT\"\n              }\n            ],\n            \"valueHint\": \"Mona\"\n          }\n        ],\n        \"help\": \"Custom Identifiers are informational data values about site visitors\",\n        \"enablingConditions\": []\n      },\n      {\n        \"type\": \"SIMPLE_TABLE\",\n        \"name\": \"custom_tag\",\n        \"displayName\": \"Custom Tag\",\n        \"simpleTableColumns\": [\n          {\n            \"defaultValue\": \"\",\n            \"displayName\": \"Key\",\n            \"name\": \"key\",\n            \"type\": \"TEXT\",\n            \"valueHint\": \"\"\n          },\n          {\n            \"defaultValue\": \"\",\n            \"displayName\": \"Value\",\n            \"name\": \"value\",\n            \"type\": \"TEXT\",\n            \"valueValidators\": [\n              {\n                \"type\": \"STRING_LENGTH\",\n                \"args\": [\n                  1,\n                  255\n                ]\n              }\n            ],\n            \"valueHint\": \"\"\n          }\n        ],\n        \"help\": \"Custom tags are customizable filters that allow you to analyze recordings and heatmaps in different directions\",\n        \"valueValidators\": []\n      }\n    ]\n  }\n]\n\n\n___SANDBOXED_JS_FOR_WEB_TEMPLATE___\n\n// Require the necessary APIs\nconst injectScript = require('injectScript');\nconst queryPermission = require('queryPermission');\nconst createArgumentsQueue = require('createArgumentsQueue');\nconst encodeUri = require('encodeUri');\nconst addEventCallback = require('addEventCallback');\nconst copyFromDataLayer = require('copyFromDataLayer');\n//const log = require('logToConsole');\n\n// Create clarity const\nconst clarity = createArgumentsQueue('clarity', 'clarity.q');\n\nconst customTags = data.custom_tag || [];\n\n// Reconstruct customer clarity script URL\nconst url = \"https://www.clarity.ms/tag/\"+encodeUri(data.projectId)+\"?ref=gtm\";\n\nconst runClarityIdentify = () => {\n  const friendlyName = data.friendlyName || '';\n  const sessionId = data.sessionId || '';\n  const pageId = data.pageId || '';\n  if (data.userId) {\n    clarity(\n      \"identify\",\n      data.userId,\n      sessionId,\n      pageId,\n      friendlyName\n    );\n  }\n};\n\n// Handle Success\nconst onCustomerSuccess = () => {\n  data.gtmOnSuccess();\n};\n\n// Handle Failure\nconst onCustomerFailure = () => {\n  data.gtmOnFailure();\n};\n\n\n// If the URL input by the user matches the permissions set for the template,\n// inject the script with the onSuccess and onFailure methods as callbacks.\nif (queryPermission('inject_script', \"https://www.clarity.ms\")) {\n  for (var i = 0; i < customTags.length; i++) {\n    if (customTags[i].value) {\n      clarity('set', customTags[i].key, customTags[i].value);\n    }\n  }\n\n  if (data.userId) {\n    runClarityIdentify();\n  } else {\n    // Otherwise wait for Window Loaded event\n    addEventCallback(function(containerId, eventData) {\n      const event = copyFromDataLayer('event');\n      if (event === 'gtm.load') {\n        runClarityIdentify();\n      }\n    });\n  }\n \n  injectScript(url, onCustomerSuccess, onCustomerFailure);\n  \n} else {\n  data.gtmOnFailure();\n}\n\n\n___WEB_PERMISSIONS___\n\n[\n  {\n    \"instance\": {\n      \"key\": {\n        \"publicId\": \"inject_script\",\n        \"versionId\": \"1\"\n      },\n      \"param\": [\n        {\n          \"key\": \"urls\",\n          \"value\": {\n            \"type\": 2,\n            \"listItem\": [\n              {\n                \"type\": 1,\n                \"string\": \"https://www.clarity.ms/*\"\n              }\n            ]\n          }\n        }\n      ]\n    },\n    \"clientAnnotations\": {\n      \"isEditedByUser\": true\n    },\n    \"isRequired\": true\n  },\n  {\n    \"instance\": {\n      \"key\": {\n        \"publicId\": \"access_globals\",\n        \"versionId\": \"1\"\n      },\n      \"param\": [\n        {\n          \"key\": \"keys\",\n          \"value\": {\n            \"type\": 2,\n            \"listItem\": [\n              {\n                \"type\": 3,\n                \"mapKey\": [\n                  {\n                    \"type\": 1,\n                    \"string\": \"key\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"read\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"write\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"execute\"\n                  }\n                ],\n                \"mapValue\": [\n                  {\n                    \"type\": 1,\n                    \"string\": \"clarity\"\n                  },\n                  {\n                    \"type\": 8,\n                    \"boolean\": true\n                  },\n                  {\n                    \"type\": 8,\n                    \"boolean\": true\n                  },\n                  {\n                    \"type\": 8,\n                    \"boolean\": true\n                  }\n                ]\n              },\n              {\n                \"type\": 3,\n                \"mapKey\": [\n                  {\n                    \"type\": 1,\n                    \"string\": \"key\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"read\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"write\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"execute\"\n                  }\n                ],\n                \"mapValue\": [\n                  {\n                    \"type\": 1,\n                    \"string\": \"clarity.q\"\n                  },\n                  {\n                    \"type\": 8,\n                    \"boolean\": true\n                  },\n                  {\n                    \"type\": 8,\n                    \"boolean\": true\n                  },\n                  {\n                    \"type\": 8,\n                    \"boolean\": true\n                  }\n                ]\n              }\n            ]\n          }\n        }\n      ]\n    },\n    \"clientAnnotations\": {\n      \"isEditedByUser\": true\n    },\n    \"isRequired\": true\n  },\n  {\n    \"instance\": {\n      \"key\": {\n        \"publicId\": \"read_event_metadata\",\n        \"versionId\": \"1\"\n      },\n      \"param\": []\n    },\n    \"isRequired\": true\n  },\n  {\n    \"instance\": {\n      \"key\": {\n        \"publicId\": \"read_data_layer\",\n        \"versionId\": \"1\"\n      },\n      \"param\": [\n        {\n          \"key\": \"allowedKeys\",\n          \"value\": {\n            \"type\": 1,\n            \"string\": \"specific\"\n          }\n        },\n        {\n          \"key\": \"keyPatterns\",\n          \"value\": {\n            \"type\": 2,\n            \"listItem\": [\n              {\n                \"type\": 1,\n                \"string\": \"event\"\n              }\n            ]\n          }\n        }\n      ]\n    },\n    \"clientAnnotations\": {\n      \"isEditedByUser\": true\n    },\n    \"isRequired\": true\n  }\n]\n\n\n___TESTS___\n\nscenarios: []\n\n\n___NOTES___\n\nCreated on 2/2/2021, 12:41:15 PM\n\n\n",
+                "galleryReference": {
+                    "host": "github.com",
+                    "owner": "microsoft",
+                    "repository": "clarity-gtm-template",
+                    "version": "a4013e4a6b1ae135d6acd80cdb7dd803d849dc54",
+                    "signature": "005e0c847e851bd85c268486f2194c0774337b596daeeaae5c10020c059a9472",
+                    "galleryTemplateId": "MQDKZ"
+                }
+            }
+        ]
+    }
+}
